@@ -15,7 +15,7 @@ var gulp = require("gulp"),
 
 
 // #############################################
-// # init params
+// init params
 
 // 收集参数
 var cwd = process.cwd();
@@ -30,7 +30,6 @@ while (cmdargs.length) {
 	var val = cmdargs.shift();
 	cmdopts[key] = key === "src" || key === "dist" ? normalizePath(val) : val;
 }
-
 // 参数配置
 var release = cmdname === "release";
 var reloadTimer = null;
